@@ -5,15 +5,12 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>MINIMAL +</title>
 </head>
 <body>
 <header>
-    <div class="container d_flex">
+    <div class="container d_flex jc_between">
         <a href="#">
             <img src="img/Logo.svg" alt="header_logo">
         </a>
@@ -70,9 +67,56 @@
         </div>
     </section>
 
+    <section class="projects">
+        <div class="container">
+            <h2>
+                Recent projects
+            </h2>
+            <div class="articles d_flex jc_between">
+                <article>
+                    <img src="img/woods.jpg" alt="woods">
+                    <p><span>woods</span>Photography</p>
+                </article>
+                <article>
+                    <img src="img/path.jpg" alt="path">
+                    <p><span>path</span>Website • Photography</p>
+                </article>
+                <article>
+                    <img src="img/darkness.jpg" alt="darkness">
+                    <p><span>darkness</span>Website</p>
+                </article>
+                <article>
+                    <img src="img/wawes.jpg" alt="wawes">
+                    <p><span>waves</span>Photography</p>
+                </article>
+                <article>
+                    <img src="img/drops.jpg" alt="drops">
+                    <p><span>drops</span>Website</p>
+                </article>
+                <article>
+                    <img src="img/ocean.jpg" alt="ocean">
+                    <p><span>ocean</span>Website</p>
+                </article>
+                <article>
+                    <img src="img/town.jpg" alt="town">
+                    <p><span>town</span>Website</p>
+                </article>
+                <article>
+                    <img src="img/moutain.jpg" alt="moutain">
+                    <p><span>mountain</span>Website</p>
+                </article>
+                <article>
+                    <img src="img/camera.jpg" alt="camera">
+                    <p><span>camera</span>Website</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <section class="section_quote">
         <img src="img/Q_logo.svg" alt="Q_logo" class="Q_logo">
         <div class="quote">
+            <div class="v-line"></div>
             <article>
                 <q>I love these guys! They did a great job. I would recommend them to anyone.</q>
                 <img src="img/julius.jpg" alt="Julius">
@@ -89,21 +133,26 @@
     <section class="section_lets">
         <h2>LET’s Get in touch</h2>
         <div class="lets">
-            <article>
+            <article data-aos="fade-up"
+                     data-aos-duration="500">
                 <div class="image_container">
                     <img src="img/marker.svg" alt="marker">
                 </div>
                 <h3>MEET US IN PERSON</h3>
                 <p>8776 Juniper Street<br>Unit #204<br>Merriweather, Ontorio<br>Canada</p>
             </article>
-            <article>
+            <article data-aos="fade-up"
+                     data-aos-duration="500"
+                     data-aos-delay="500">
                 <div class="image_container">
                     <img src="img/letter.svg" alt="letter">
                 </div>
                 <h3 class=>The traditional way</h3>
                 <p>Email us<br>contact@minimal.com<br> <br>Contact form<br>Scroll down</p>
             </article>
-            <article>
+            <article data-aos="fade-up"
+                     data-aos-duration="500"
+                     data-aos-delay="1000">
                 <div class="image_container">
                     <img src="img/heart.svg" alt="heart">
                 </div>
@@ -174,5 +223,9 @@
             <p>Minimal Template made in Webflow. All rights reserved.</p>
         </div>
 </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
